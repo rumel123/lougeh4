@@ -11,9 +11,10 @@ const token = require('./token')
 //attaching imports
 const encrypt = encrypts({jwt,dotenv,token})
 
+const tokens = token({})
+
 const decrypt = decrypts({jwt,dotenv})
 
-const tokens = token({})
  
 const services = Object.freeze({
     decrypt,encrypt,tokens

@@ -1,7 +1,10 @@
+import('express')
 const token = ({}) => {
-    return function token(data)
-    {
-        return data
+    return async function (req,res)
+    {  
+        const head = req.body
+        console.log(head)
+        return head 
     }
 }
 

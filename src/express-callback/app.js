@@ -14,7 +14,7 @@ const makeExpressCallback = (controller) => {
         "Content-Type": req.get("Content-Type"),
         Referer: req.get("referer"),
         "User-Agent": req.get("User-Agent"),
-        Cookie: req.get("authorization"), 
+        Cookie: req.get("Authorization"), 
         "Access-Control-Allow-Origin": "*", 
       },
     };
